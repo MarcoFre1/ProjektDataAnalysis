@@ -1,5 +1,5 @@
 # Projekt Data Analysis
-
+## Beschreibung
 Ziel des folgenden Projekts ist es, aus einer großen Sammlung an Rezensionen mittels Natural Language Processing (NLP) Techniken die am häufigsten genannten Themen zu extrahieren,
 um fiktiven Entscheidungsträgern zu zeigen, 
 welche Punkte am häufigsten angesprochen werden, um so in der Folge die Produktqualität zu verbessern.<br>
@@ -12,7 +12,7 @@ Zum Einsatz kommende Methoden, sind:<br>
 - Latent Dirichlet Allocation (LDA)<br>
 
 
-# System Requirements
+## System Requirements
 
 Es wird folgendes Tool zum Herunterladen des Repositorys benötigt:<br>
 -> Git-Scm: https://git-scm.com/downloads<br>
@@ -20,7 +20,7 @@ Es wird folgendes Tool zum Herunterladen des Repositorys benötigt:<br>
 Weiters ist eine Conda-Umgebung zum Aktivieren der Umgebung, sowie zum Ausführen des Pyhton-Skripts nötig:<br>
 -> Anaconda- oder Miniconda-Distributionen: https://www.anaconda.com/download | https://docs.anaconda.com/miniconda/
 
-# Installation
+## Installation
 
 Um dieses Projekt auszuführen, müssen Sie zuerst eine Conda-Umgebung einrichten und die erforderlichen Pakete installieren. <br>
 Stellen Sie sicher, dass Conda auf Ihrem System installiert ist. <br>
@@ -44,7 +44,7 @@ conda env create -f environmentWindows.yml<br>
 
 python PythonCode.py
 
-# Funktionen des Codes
+## Funktionen des Codes
 
-# Hinweise
+## Hinweise
 

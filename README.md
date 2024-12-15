@@ -89,6 +89,23 @@ perform_lda(text_list, n_topics=5, n_top_words=10): Erstellen und Anwenden des C
 Der Code verarbeitet die Daten schrittweise, um "saubere Texte" zu erzeugen, die dann für die Vektorisierung und anschließende Themenextraktion verwendet werden.
 
 
-
 ## Hinweise
+
+Die Berechnung der Coherence Scores brachten mit Datum 15.12.2024 folgende Ergebnisse:
+
+    # Results from review
+    lda_model_review, coherence_review = run_lda_analysis(cleaned_reviews, 5) 0.2471651210039798
+    lda_model_review, coherence_review = run_lda_analysis(cleaned_reviews, 6) 0.2799919362448972
+    lda_model_review, coherence_review = run_lda_analysis(cleaned_reviews, 7) 0.2910895543971476
+    lda_model_review, coherence_review = run_lda_analysis(cleaned_reviews, 8) 0.3085074511989887
+    lda_model_review, coherence_review = run_lda_analysis(cleaned_reviews, 9) 0.29556273834970986
+
+    # Results from summary (took too long on every execution of the program)
+    lda_model_summary, coherence_summary = run_lda_analysis(cleaned_summaries, 5) 0.5329306042849031
+    lda_model_summary, coherence_summary = run_lda_analysis(cleaned_summaries, 6) 0.5360185919104373
+    lda_model_summary, coherence_summary = run_lda_analysis(cleaned_summaries, 7) 0.5505435500322134
+    lda_model_summary, coherence_summary = run_lda_analysis(cleaned_summaries, 8) 0.573887214693374
+    lda_model_summary, coherence_summary = run_lda_analysis(cleaned_summaries, 9) 0.5465979486599257
+
+
 

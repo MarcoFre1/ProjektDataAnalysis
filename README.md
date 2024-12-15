@@ -70,7 +70,7 @@ Achtung: Mit <b>cd</b> in den Repository-Pfad wechseln
 
 ## Funktionen des Codes
 
-remove_unwanted_characters(token): Diese Funktion entfernt alle Zeichen aus einem Token, die keine Buchstaben (a-z, A-Z) sind. Sie verwendet ein reguläres Ausdruck (regex), um alle nicht alphabetischen Zeichen durch Leerzeichen zu ersetzen.
+remove_unwanted_characters(token): Diese Funktion entfernt alle Zeichen aus einem Token, die keine Buchstaben (a-z, A-Z) sind. Sie verwendet einen regulären Ausdruck (regex), um alle nicht alphabetischen Zeichen durch Leerzeichen zu ersetzen.
 
 clean_raw_data(text): Diese Funktion bereinigt einen gegebenen Text durch mehrere Schritte der Textvorverarbeitung:
 

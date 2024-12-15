@@ -11,7 +11,7 @@ Zum Einsatz kommende Methoden, sind:<br>
 - Latent Dirichlet Allocation (LDA)<br>
 
 
-## System Requirements
+## Systemanforderungen
 
 Folgendes Tool wird zum Herunterladen des Repositorys benötigt:<br>
 -> Git-SCM: https://git-scm.com/downloads<br>

@@ -70,23 +70,31 @@ Achtung: Mit <b>cd</b> in den Repository-Pfad wechseln
 
 ## Funktionen des Codes
 
-remove_unwanted_characters(token): Entfernt unerwünschte Zeichen aus den Token, behält aber Buchstaben und Umlaute.
+remove_unwanted_characters(token): Diese Funktion entfernt alle Zeichen aus einem Token, die keine Buchstaben (a-z, A-Z) sind. Sie verwendet ein reguläres Ausdruck (regex), um alle nicht alphabetischen Zeichen durch Leerzeichen zu ersetzen.
 
-clean_raw_data(text): Entfernt alle Punkte, Sonderzeichen und Emojis; Entfernt unerwünschte spezifische Wörter; Entfernt Stoppwörter; Führt Lemmatisierung durch; Konvertiert die Wörter in Kleinbuchstaben
+clean_raw_data(text): Diese Funktion bereinigt einen gegebenen Text durch mehrere Schritte der Textvorverarbeitung:
 
-generate_bag_of_words(text_list): Daten vorbereiten, erstellen einer Instanz von CountVectorizer, Vektorisierer auf Daten anwenden, ermitteln der Worthäufigkeit.
+- Tokenisierung: Der Text wird in einzelne Wörter (Tokens) aufgeteilt.
+Entfernen unerwünschter Zeichen: Alle nicht alphabetischen Zeichen werden durch die Funktion remove_unwanted_characters() entfernt.
+- Entfernen spezifischer Wörter: Eine Liste von unerwünschten Wörtern (one, like) wird entfernt.
+- Stopwörter entfernen: Häufige, nicht informative Wörter (Stopwörter) werden entfernt.
+- Punktzeichen entfernen: Alle Satzzeichen werden entfernt.
+- Lemmatisierung: Jedes Wort wird in seine Grundform umgewandelt.
+- Umwandlung in Kleinbuchstaben: Alle Wörter werden in Kleinbuchstaben umgewandelt, um die Einheitlichkeit zu gewährleisten.
 
-bow_dataframe(word_freq_text): 
+generate_bag_of_words(text_list): Die Funktion erstellt ein Bag-of-Words-Modell, das sowohl Einzelwörter als auch Wortpaare (2-Gramme) berücksichtigt. Sie berechnet die Häufigkeit der Wörter und gibt diese in einem sortierten Wörterbuch zurück. Dies ist eine grundlegende Methode zur Textdarstellung, die für viele Textanalyseaufgaben verwendet wird.
 
-tfidf_vectorize_as_single_document(token_lists): Umwandlung der Token-Listen in Strings und Zusammenführen zu einem einzigen Dokument, Erstellung und Anwendung des TfidfVectorizer und die Umwandlung der TF-IDF-Matrix in einen DataFrame.
+bow_dataframe(word_freq_text): Die Funktion erstellt einen DataFrame aus einem Wörterbuch von Wortfrequenzen und sortiert die Wörter nach ihrer Häufigkeit. Sie gibt die fünf häufigsten Wörter zurück, um die wichtigsten Begriffe aus einem Text zu extrahieren.
 
-transform_and_sort_tfidf(tfidf_df): 
+tfidf_vectorize_as_single_document(token_lists): Die Funktion berechnet die TF-IDF-Werte für ein zusammengeführtes Dokument, das aus einer Liste von Token-Listen besteht. Die berechneten TF-IDF-Werte werden in einem DataFrame zurückgegeben, der die Gewichtung der Begriffe in Bezug auf ihre Wichtigkeit darstellt.
 
-run_lda_analysis(text_list, num_topics): Berechnung des Coherence Scores
+transform_and_sort_tfidf(tfidf_df): Die Funktion transformiert und sortiert ein DataFrame, das TF-IDF-Werte enthält. Sie transponiert den DataFrame, benennt die Spalten um und sortiert die Begriffe nach ihrer Wichtigkeit in absteigender Reihenfolge der TF-IDF-Werte.
 
-perform_lda(text_list, n_topics=5, n_top_words=10): Erstellen und Anwenden des CountVectorizer, erstellen und anwenden der LDA und anzeigen der Top-Wörter für jedes Thema.
+run_lda_analysis(text_list, num_topics): Die Funktion führt eine LDA-Analyse auf einem Textkorpus durch, wobei sie die Themen extrahiert und einen Kohärenzwert berechnet, der die Qualität der erkannten Themen beschreibt. Sie gibt das trainierte LDA-Modell und den Kohärenzwert zurück.
 
-Der Code verarbeitet die Daten schrittweise, um "saubere Texte" zu erzeugen, die dann für die Vektorisierung und anschließende Themenextraktion verwendet werden.
+perform_lda(text_list, n_topics=5, n_top_words=10): Die Funktion führt eine LDA-Analyse auf einem gegebenen Textkorpus durch, wobei sie die wichtigsten Wörter für jedes Thema anzeigt. Sie verwendet den TfidfVectorizer, um den Text in eine TF-IDF-Matrix umzuwandeln, und das LDA-Modell, um Themen aus den Textdaten zu extrahieren.
+
+Das Programm verarbeitet die Daten schrittweise, um saubere Texte zu erzeugen, die in der Folge für die Vektorisierung und eine anschließende Themenextraktion verwendet werden.
 
 
 ## Hinweise

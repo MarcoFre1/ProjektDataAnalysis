@@ -21,7 +21,7 @@ Weiters ist eine Conda-Umgebung zum Aktivieren der Umgebung, sowie zum Ausführe
 
 ## Installation
 
-Um dieses Projekt auszuführen, müssen zuerst eine Conda-Umgebung eingerichtet und die erforderlichen Pakete installiert werden. <br>
+Um dieses Projekt auszuführen, müssen zuerst eine Conda-Umgebung eingerichtet sowie die erforderlichen Pakete installiert werden. <br>
 Stellen Sie sicher, dass Conda auf Ihrem System installiert ist. <br>
 Beachten Sie dazu bitte die Installationsanweisungen des Herstellers: https://docs.anaconda.com/anaconda/install/windows/
 

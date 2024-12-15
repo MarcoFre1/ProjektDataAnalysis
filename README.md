@@ -91,7 +91,7 @@ Der Code verarbeitet die Daten schrittweise, um "saubere Texte" zu erzeugen, die
 
 ## Hinweise
 
-Die Berechnung der Coherence Scores brachten mit Datum 15.12.2024 folgende Ergebnisse:
+Die Berechnungen der Coherence Scores brachten mit Datum 15.12.2024 folgende Ergebnisse:
 
     # Results from review
     lda_model_review, coherence_review = run_lda_analysis(cleaned_reviews, 5) 0.2471651210039798

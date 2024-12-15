@@ -82,7 +82,7 @@ Entfernen unerwünschter Zeichen: Alle nicht alphabetischen Zeichen werden durch
 - Lemmatisierung: Jedes Wort wird in seine Grundform umgewandelt.
 - Umwandlung in Kleinbuchstaben: Alle Wörter werden in Kleinbuchstaben umgewandelt, um die Einheitlichkeit zu gewährleisten.
 
-generate_bag_of_words(text_list): Die Funktion erstellt ein Bag-of-Words-Modell, das sowohl Einzelwörter als auch Wortpaare (2-Gramme) berücksichtigt. Sie berechnet die Häufigkeit der Wörter und gibt diese in einem sortierten Wörterbuch zurück. Dies ist eine grundlegende Methode zur Textdarstellung, die für viele Textanalyseaufgaben verwendet wird.
+generate_bag_of_words(text_list): Die Funktion erstellt ein Bag-of-Words-Modell, das sowohl Einzelwörter als auch Wortpaare (2-Gramme) berücksichtigt. Sie berechnet die Häufigkeit der Wörter und gibt diese in einem sortierten Wörterbuch zurück.
 
 bow_dataframe(word_freq_text): Die Funktion erstellt einen DataFrame aus einem Wörterbuch von Wortfrequenzen und sortiert die Wörter nach ihrer Häufigkeit. Sie gibt die fünf häufigsten Wörter zurück, um die wichtigsten Begriffe aus einem Text zu extrahieren.
 

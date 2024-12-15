@@ -7,7 +7,7 @@ welche Punkte am häufigsten angesprochen werden, um so in der Folge die Produkt
 Zum Einsatz kommende Methoden, sind:<br>
 - Textvorverarbeitung<br>
 - Bag-of-Words (BoW)<br>
-- TF-IDF<br>
+- Frequency-Inverse Document Frequency (TF-IDF)<br>
 - Latent Dirichlet Allocation (LDA)<br>
 
 

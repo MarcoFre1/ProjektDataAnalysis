@@ -8,7 +8,6 @@ Zum Einsatz kommende Methoden, sind:<br>
 - Textvorverarbeitung<br>
 - Bag-of-Words (BoW)<br>
 - TF-IDF<br>
-- Latent Semantic Analysis (LSA)<br>
 - Latent Dirichlet Allocation (LDA)<br>
 
 
@@ -70,6 +69,26 @@ Achtung: Mit <b>cd</b> in den Repository-Pfad wechseln
 </div>
 
 ## Funktionen des Codes
+
+remove_unwanted_characters(token): Entfernt unerwünschte Zeichen aus den Token, behält aber Buchstaben und Umlaute.
+
+clean_raw_data(text): Entfernt alle Punkte, Sonderzeichen und Emojis; Entfernt unerwünschte spezifische Wörter; Entfernt Stoppwörter; Führt Lemmatisierung durch; Konvertiert die Wörter in Kleinbuchstaben
+
+generate_bag_of_words(text_list): Daten vorbereiten, erstellen einer Instanz von CountVectorizer, Vektorisierer auf Daten anwenden, ermitteln der Worthäufigkeit.
+
+bow_dataframe(word_freq_text): 
+
+tfidf_vectorize_as_single_document(token_lists): Umwandlung der Token-Listen in Strings und Zusammenführen zu einem einzigen Dokument, Erstellung und Anwendung des TfidfVectorizer und die Umwandlung der TF-IDF-Matrix in einen DataFrame.
+
+transform_and_sort_tfidf(tfidf_df): 
+
+run_lda_analysis(text_list, num_topics): Berechnung des Coherence Scores
+
+perform_lda(text_list, n_topics=5, n_top_words=10): Erstellen und Anwenden des CountVectorizer, erstellen und anwenden der LDA und anzeigen der Top-Wörter für jedes Thema.
+
+Der Code verarbeitet die Daten schrittweise, um "saubere Texte" zu erzeugen, die dann für die Vektorisierung und anschließende Themenextraktion verwendet werden.
+
+
 
 ## Hinweise
 

@@ -13,11 +13,11 @@ Zum Einsatz kommende Methoden, sind:<br>
 
 ## Systemanforderungen
 
-Folgendes Tool wird zum Herunterladen des Repositorys benötigt:<br>
--> Git-SCM: https://git-scm.com/downloads<br>
+Ein Tool wird zum Herunterladen des Repositorys benötigt:<br>
+-> z.B. Git-SCM: https://git-scm.com/downloads oder https://www.sourcetreeapp.com/<br>
 
 Weiters ist eine Conda-Umgebung zum Aktivieren der Umgebung, sowie zum Ausführen des Pyhton-Skripts nötig:<br>
--> Anaconda- oder Miniconda-Distributionen: https://www.anaconda.com/download | https://docs.anaconda.com/miniconda/
+-> Anaconda-Distributionen: https://www.anaconda.com/download | https://docs.anaconda.com/miniconda/
 
 ## Installation
 

@@ -8,7 +8,7 @@ Zum Einsatz kommende Methoden, sind:<br>
 - Textvorverarbeitung<br>
 - Bag-of-Words (BoW)<br>
 - TF-IDF<br>
-- Latent Dirichlet Allocation (LDA)<br>
+#- Latent Dirichlet Allocation (LDA)<br>
 
 
 ## System Requirements

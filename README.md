@@ -72,7 +72,7 @@ Achtung: Mit <b>cd</b> in den Repository-Pfad wechseln
 
 <b>remove_unwanted_characters(token)</b>: Diese Funktion entfernt alle Zeichen aus einem Token, die keine Buchstaben (a-z, A-Z) sind. Sie verwendet einen regulären Ausdruck (regex), um alle nicht alphabetischen Zeichen durch Leerzeichen zu ersetzen.
 
-clean_raw_data(text): Diese Funktion bereinigt einen gegebenen Text durch mehrere Schritte der Textvorverarbeitung:
+<b>clean_raw_data(text)</b>: Diese Funktion bereinigt einen gegebenen Text durch mehrere Schritte der Textvorverarbeitung:
 
 - Tokenisierung: Der Text wird in einzelne Wörter (Tokens) aufgeteilt.
 Entfernen unerwünschter Zeichen: Alle nicht alphabetischen Zeichen werden durch die Funktion remove_unwanted_characters() entfernt.
@@ -82,17 +82,17 @@ Entfernen unerwünschter Zeichen: Alle nicht alphabetischen Zeichen werden durch
 - Lemmatisierung: Jedes Wort wird in seine Grundform umgewandelt.
 - Umwandlung in Kleinbuchstaben: Alle Wörter werden in Kleinbuchstaben umgewandelt, um die Einheitlichkeit zu gewährleisten.
 
-generate_bag_of_words(text_list): Die Funktion erstellt ein Bag-of-Words-Modell, das sowohl Einzelwörter als auch Wortpaare (2-Gramme) berücksichtigt. Sie berechnet die Häufigkeit der Wörter und gibt diese in einem sortierten Wörterbuch zurück.
+<b>generate_bag_of_words(text_list)</b>: Die Funktion erstellt ein Bag-of-Words-Modell, das sowohl Einzelwörter als auch Wortpaare (2-Gramme) berücksichtigt. Sie berechnet die Häufigkeit der Wörter und gibt diese in einem sortierten Wörterbuch zurück.
 
-bow_dataframe(word_freq_text): Die Funktion erstellt einen DataFrame aus einem Wörterbuch von Wortfrequenzen und sortiert die Wörter nach ihrer Häufigkeit. Sie gibt die fünf häufigsten Wörter zurück, um die wichtigsten Begriffe aus einem Text zu extrahieren.
+<b>bow_dataframe(word_freq_text)</b>: Die Funktion erstellt einen DataFrame aus einem Wörterbuch von Wortfrequenzen und sortiert die Wörter nach ihrer Häufigkeit. Sie gibt die fünf häufigsten Wörter zurück, um die wichtigsten Begriffe aus einem Text zu extrahieren.
 
-tfidf_vectorize_as_single_document(token_lists): Die Funktion berechnet die TF-IDF-Werte für ein zusammengeführtes Dokument, das aus einer Liste von Token-Listen besteht. Die berechneten TF-IDF-Werte werden in einem DataFrame zurückgegeben, der die Gewichtung der Begriffe in Bezug auf ihre Wichtigkeit darstellt.
+<b>tfidf_vectorize_as_single_document(token_lists)</b>: Die Funktion berechnet die TF-IDF-Werte für ein zusammengeführtes Dokument, das aus einer Liste von Token-Listen besteht. Die berechneten TF-IDF-Werte werden in einem DataFrame zurückgegeben, der die Gewichtung der Begriffe in Bezug auf ihre Wichtigkeit darstellt.
 
-transform_and_sort_tfidf(tfidf_df): Die Funktion transformiert und sortiert ein DataFrame, das TF-IDF-Werte enthält. Sie transponiert den DataFrame, benennt die Spalten um und sortiert die Begriffe nach ihrer Wichtigkeit in absteigender Reihenfolge der TF-IDF-Werte.
+<b>transform_and_sort_tfidf(tfidf_df)</b>: Die Funktion transformiert und sortiert ein DataFrame, das TF-IDF-Werte enthält. Sie transponiert den DataFrame, benennt die Spalten um und sortiert die Begriffe nach ihrer Wichtigkeit in absteigender Reihenfolge der TF-IDF-Werte.
 
-run_lda_analysis(text_list, num_topics): Die Funktion führt eine LDA-Analyse auf einem Textkorpus durch, wobei sie die Themen extrahiert und einen Kohärenzwert berechnet, der die Qualität der erkannten Themen beschreibt. Sie gibt das trainierte LDA-Modell und den Kohärenzwert zurück.
+<b>run_lda_analysis(text_list, num_topics)</b>: Die Funktion führt eine LDA-Analyse auf einem Textkorpus durch, wobei sie die Themen extrahiert und einen Kohärenzwert berechnet, der die Qualität der erkannten Themen beschreibt. Sie gibt das trainierte LDA-Modell und den Kohärenzwert zurück.
 
-perform_lda(text_list, n_topics=5, n_top_words=10): Die Funktion führt eine LDA-Analyse auf einem gegebenen Textkorpus durch, wobei sie die wichtigsten Wörter für jedes Thema anzeigt. Sie verwendet den TfidfVectorizer, um den Text in eine TF-IDF-Matrix umzuwandeln, und das LDA-Modell, um Themen aus den Textdaten zu extrahieren.
+<b>perform_lda(text_list, n_topics=5, n_top_words=10)</b>: Die Funktion führt eine LDA-Analyse auf einem gegebenen Textkorpus durch, wobei sie die wichtigsten Wörter für jedes Thema anzeigt. Sie verwendet den TfidfVectorizer, um den Text in eine TF-IDF-Matrix umzuwandeln, und das LDA-Modell, um Themen aus den Textdaten zu extrahieren.
 
 Das Programm verarbeitet die Daten schrittweise, um saubere Texte zu erzeugen, die in der Folge für die Vektorisierung und eine anschließende Themenextraktion verwendet werden.
 

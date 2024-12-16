@@ -62,7 +62,7 @@ Achtung: Öffnen Sie anschließend ein Anaconda Prompt und welchseln Sie mit <b>
 <br><br>
 <div>
   <pre style="display: inline-block; padding: 5px; background-color: #e3f2fd; border-radius: 5px;">
-    <code id="command">python PythonCode.py</code>
+    <code id="command">python project-da.py</code>
   </pre>
   <button onclick="copyToClipboard()" style="background-color: #007BFF; color: white; padding: 5px; border: none; border-radius: 5px; cursor: pointer; display: inline-block; vertical-align: left;">
   </button>

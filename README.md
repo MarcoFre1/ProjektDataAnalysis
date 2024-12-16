@@ -52,7 +52,7 @@ Achtung: Mit <b>cd</b> in den Repository-Pfad wechseln
 <br><br>
 <div>
   <pre style="display: inline-block; padding: 5px; background-color: #e3f2fd; border-radius: 5px;">
-    <code id="command">conda activate ProjektDataAnalysis</code>
+    <code id="command">conda activate project-data-analysis</code>
   </pre>
   <button onclick="copyToClipboard()" style="background-color: #007BFF; color: white; padding: 5px; border: none; border-radius: 5px; cursor: pointer; display: inline-block; vertical-align: left;">
   </button>

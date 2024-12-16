@@ -36,7 +36,7 @@ Folgen Sie anschließend den beschriebenen Anweisungen:
   </button>
 </div>
 
-Achtung: Mit <b>cd</b> in den Repository-Pfad wechseln
+Achtung: Öffnen Sie anschließend ein Anaconda Prompt und welchseln Sie mit <b>cd</b> in den Repository-Pfad
 <br><br>
 <b>2. Erstellen der Conda-Umgebung unter Windows</b>
 <br>
